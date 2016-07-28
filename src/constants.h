@@ -3,6 +3,8 @@
 
 // Debugging
 const bool kPlotVectorField = false;
+const bool debugLog1FindEyeCenter = false;
+const bool debugShowImg1FindEyeCenter = false;
 
 // Size constants
 const int kEyePercentTop = 25;
@@ -23,6 +25,7 @@ const double kGradientThreshold = 50.0;
 
 // Postprocessing
 const bool kEnablePostProcess = true;
+//const float kPostProcessThreshold = 0.90;
 const float kPostProcessThreshold = 0.97;
 
 // Eye Corner

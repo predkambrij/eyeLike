@@ -8,6 +8,14 @@
 
 #include "constants.h"
 
+void elImshowWrapper(const char* name, cv::Mat mat, bool shouldShow) {
+#ifndef IS_PHONE
+    if (shouldShow == true) {
+        imshow(name, mat);
+    }
+#endif
+}
+
 bool rectInImage(cv::Rect rect, cv::Mat image) {
   return rect.x > 0 && rect.y > 0 && rect.x+rect.width < image.cols &&
   rect.y+rect.height < image.rows;
